@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import axios from '../axios';
+import axios from 'axios';
 
 export default {
   data() {
@@ -21,8 +21,8 @@ export default {
     async addTask() {
       try {
         await axios.post('/tasks', { description: this.taskDescription });
-        this.taskDescription = ''; // Clear input after successful request
-        this.$emit('task-added'); // Notify parent component
+        this.taskDescription = '';
+        this.$emit('task-added');
       } catch (error) {
         console.error('Error adding task:', error);
       }

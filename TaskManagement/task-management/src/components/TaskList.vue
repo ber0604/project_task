@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import axios from '../axios';
+import axios from 'axios';
 
 export default {
   data() {
@@ -21,7 +21,7 @@ export default {
   async created() {
     await this.fetchTasks();
   },
-  methods: {
+  methods: {                                               
     async fetchTasks() {
       try {
         const response = await axios.get('/tasks');
@@ -32,8 +32,7 @@ export default {
     }
   },
   watch: {
-    '$route'(to, from) {
-      // Refresh tasks when route changes
+    '$route'() {
       this.fetchTasks();
     }
   }

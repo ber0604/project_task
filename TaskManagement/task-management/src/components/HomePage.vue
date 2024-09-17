@@ -16,7 +16,7 @@ export default {
   },
   methods: {
     refreshTasks() {
-      this.$refs.taskList.fetchTasks(); // Refresh the task list
+      this.$refs.taskList.fetchTasks();
     }
   }
 };
