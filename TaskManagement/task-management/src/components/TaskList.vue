@@ -24,7 +24,7 @@ export default {
   methods: {                                               
     async fetchTasks() {
       try {
-        const response = await axios.get('/tasks');
+        const response = await axios.get('/api/tasks');
         this.tasks = response.data;
       } catch (error) {
         console.error('Error fetching tasks:', error);

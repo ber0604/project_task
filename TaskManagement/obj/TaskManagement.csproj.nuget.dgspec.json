@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/bernardo/project/TaskManagement/TaskManagement.csproj": {}
+    "/home/bernardo/project_task/TaskManagement/TaskManagement.csproj": {}
   },
   "projects": {
-    "/home/bernardo/project/TaskManagement/TaskManagement.csproj": {
+    "/home/bernardo/project_task/TaskManagement/TaskManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/bernardo/project/TaskManagement/TaskManagement.csproj",
+        "projectUniqueName": "/home/bernardo/project_task/TaskManagement/TaskManagement.csproj",
         "projectName": "TaskManagement",
-        "projectPath": "/home/bernardo/project/TaskManagement/TaskManagement.csproj",
+        "projectPath": "/home/bernardo/project_task/TaskManagement/TaskManagement.csproj",
         "packagesPath": "/home/bernardo/.nuget/packages/",
-        "outputPath": "/home/bernardo/project/TaskManagement/obj/",
+        "outputPath": "/home/bernardo/project_task/TaskManagement/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/bernardo/.nuget/NuGet/NuGet.Config"
@@ -64,7 +64,7 @@
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[8.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

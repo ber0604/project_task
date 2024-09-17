@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+Slpmkrgr7SzZ5ULyoWhgmAO7eJ24kpLSMrHscrXa3wkYgYUM2TiDlAgQXiFA9zpOr5A6oQtAW60n69ZkdLUDg==",
+  "dgSpecHash": "IMzT3HeoVOsBu7gOyvEAM22xCImR6kyCdSHPcbWi+948CwEulS7NEn6VuJ2R3DK7juxCAU21k8zY8nlqd1Rrnw==",
   "success": true,
-  "projectFilePath": "/home/bernardo/project/TaskManagement/TaskManagement.csproj",
+  "projectFilePath": "/home/bernardo/project_task/TaskManagement/TaskManagement.csproj",
   "expectedPackageFiles": [
     "/home/bernardo/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/home/bernardo/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
@@ -49,8 +49,8 @@
     "/home/bernardo/.nuget/packages/microsoft.sqlserver.server/1.0.0/microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "/home/bernardo/.nuget/packages/microsoft.win32.systemevents/6.0.0/microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "/home/bernardo/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
-    "/home/bernardo/.nuget/packages/mysqlconnector/2.2.5/mysqlconnector.2.2.5.nupkg.sha512",
-    "/home/bernardo/.nuget/packages/pomelo.entityframeworkcore.mysql/7.0.0/pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
+    "/home/bernardo/.nuget/packages/mysqlconnector/2.3.5/mysqlconnector.2.3.5.nupkg.sha512",
+    "/home/bernardo/.nuget/packages/pomelo.entityframeworkcore.mysql/8.0.2/pomelo.entityframeworkcore.mysql.8.0.2.nupkg.sha512",
     "/home/bernardo/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "/home/bernardo/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "/home/bernardo/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",

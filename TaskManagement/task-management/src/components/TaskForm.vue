@@ -20,7 +20,7 @@ export default {
   methods: {
     async addTask() {
       try {
-        await axios.post('/tasks', { description: this.taskDescription });
+        await axios.post('/api/tasks', { description: this.taskDescription });
         this.taskDescription = '';
         this.$emit('task-added');
       } catch (error) {
