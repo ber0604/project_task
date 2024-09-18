@@ -45,12 +45,57 @@ namespace TaskManagement.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateTask(int id, TaskItem taskItem)
+        public async Task<IActionResult> UpdateTask(int id, [FromBody] TaskItem task)
         {
-            if (id != taskItem.Id)
+            if (id != task.Id)
             {
                 return BadRequest();
             }
+
+            var taskItem = await _context.Tasks.FindAsync(id);
+            if (taskItem == null)
+            {
+                return NotFound();
+            }
+
+            _context.Entry(taskItem).CurrentValues.SetValues(task);
+
+            if (task.CompletedAt.HasValue)
+            {
+                taskItem.CompletedAt = task.CompletedAt;
+            }
+
+            _context.Entry(taskItem).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!_context.Tasks.Any(e => e.Id == id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
+
+        [HttpPut("concluirTarefa/{id}")]
+        public async Task<IActionResult> ConcluirTarefa(int id)
+        {
+            var taskItem = await _context.Tasks.FindAsync(id);
+            if (taskItem == null)
+            {
+                return NotFound();
+            }
+
+            taskItem.CompletedAt = DateTime.Now;
 
             _context.Entry(taskItem).State = EntityState.Modified;
 

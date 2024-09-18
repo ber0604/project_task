@@ -1,15 +1,20 @@
 <template>
-  <div>
-    <h2>Add Task</h2>
+  <div style="padding: 50px">
+    <h3>Adicionar tarefa</h3>
     <form @submit.prevent="addTask">
-      <input v-model="taskDescription" placeholder="Task description" required />
-      <button type="submit">Add Task</button>
+      <div class="mb-3">
+        <label for="taskDescription" class="form-label">Descrição:</label>
+        <input v-model="taskDescription" class="form-control" placeholder="Descrição da tarefa" required />
+      </div>
+      <button type="submit" class="btn btn-primary">Adicionar</button>
     </form>
   </div>
 </template>
 
 <script>
 import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 export default {
   data() {

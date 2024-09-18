@@ -6,6 +6,7 @@
 
 <script>
 import HomePage from './components/HomePage.vue';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default {
   components: {
